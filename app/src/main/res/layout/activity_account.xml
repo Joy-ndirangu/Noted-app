@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Account">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:layout_centerInParent="true"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/about_content"
+        android:layout_below="@+id/about"
+        android:text="
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque felis aliquam turpis pharetra, ac iaculis lacus congue. Aenean rhoncus ligula et mollis vulputate. Vestibulum auctor dignissim nisl, id malesuada leo tempor nec"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:padding="15sp"
+       />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-3dp"
+        android:background="#EA608F"
+        app:menu="@menu/bottom_navigator"
+        app:itemIconTint="@drawable/selector"
+        app:itemIconSize="30dp"
+        app:itemTextColor="@drawable/selector"/>
+
+</RelativeLayout>
